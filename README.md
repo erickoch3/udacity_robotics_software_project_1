@@ -1,2 +1,15 @@
-# udacity_robotics_software_project_1
-My first Udacity Robotics Software engineer project, containing a Gazebo world with a crude building and models for sample robots.
+# Udacity Robotics Software Engineer - Gazebo
+This first project contains a simple world containing a brick building, a few bookshelves, and fun additional items in the navigation environment.
+
+The two primary robot models are simple toy tank chassis with small turrets.
+
+## Building the Plugin
+To build the plugin, please do the following (assuming MacOS):
+```
+cd ./build
+cmake ../
+make
+```
+The above code will output a `libwelcome.dylib` if on MacOS, or `libwelcome.so` on Ubuntu.
+
+If using Ubuntu, please edit the `EricWorld` file inside `./world` to reflect the `.so` file instead of the `.dylib`.
